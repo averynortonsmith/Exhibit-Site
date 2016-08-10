@@ -18,26 +18,26 @@
 		<header class="container">
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
-					<h2>Exhibit</h2> <div id="description">Publishing Framework for Data-Rich Interactive Web Pages</div>
+					<h2><a href="./">Exhibit</a></h2> <div id="description">Publishing Framework for Data-Rich Interactive Web Pages</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-12 hidden-xs">
 					<nav>
-						<a href="./">Home</a>
+						<a href="./" class="active">Home</a>
 						<a href="./">Examples</a>
 						<a href="./">Tutorial</a>
 						<a href="./">Docs</a>
-						<a href="./">Developement</a>
+						<a href="./development.html">Developement</a>
 					</nav>
 				</div>
 				<div class="col-xs-12 visible-xs">
 					<nav id="smallNav">
-						<a href="./">Home</a>
+						<a href="./" class="active">Home</a>
 						<a href="./">Examples</a>
 						<a href="./">Tutorial</a>
 						<a href="./">Docs</a>
-						<a href="./">Developement</a>
+						<a href="./development.html">Developement</a>
 					</nav>
 				</div>
 			</div>
@@ -66,8 +66,14 @@
 						</div>
 						</div>
 					</div>
-					<div id="mapCode">
-<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%; overflow: hidden;"><span style="color: #f92672">&lt;div</span> 
+				</div>
+			</div>
+			<div class="row hidden-xs hidden-sm">
+				<div id="codeContainer">
+					<div class="col-xs-12 col-md-6" style="padding-right: 0px;">
+						<h2>Code</h2>
+						<div id="mapCode">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%; overflow: hidden; text-overflow: ellipsis;"><span style="color: #f92672">&lt;div</span> 
 <span style="color: #a6e22e">id=</span><span style="color: #e6db74">&quot;mapElement&quot;</span> 
 <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;view&quot;</span>
 <span style="color: #a6e22e">data-ex-view-class=</span><span style="color: #e6db74">&quot;Map&quot;</span>
@@ -83,6 +89,77 @@
 	<span style="color: #f92672">&lt;div&gt;&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.pop&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span> people<span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
 </pre></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6" style="padding-left: 0px;">
+						<h2>Data</h2>
+						<div id="mapData">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%; text-overflow: ellipsis; overflow: hidden;"><span style="color: #f8f8f2">{</span>
+  <span style="color: #f92672">&quot;items&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[</span>
+    <span style="color: #f8f8f2">{</span>   <span style="color: #f92672">&quot;label&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;New York City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;type&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;rank&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;1&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;latlng&quot;</span><span style="color: #f8f8f2">:</span>     <span style="color: #e6db74">&quot;40.71449, -74.00713&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;state&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;New York&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;pop&quot;</span><span style="color: #f8f8f2">:</span>        <span style="color: #e6db74">&quot;8214426&quot;</span>
+    <span style="color: #f8f8f2">},</span>
+    <span style="color: #f8f8f2">{</span>   <span style="color: #f92672">&quot;label&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;Los Angeles, California&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;type&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;rank&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;latlng&quot;</span><span style="color: #f8f8f2">:</span>     <span style="color: #e6db74">&quot;34.05332, -118.24498&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;state&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;California&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;pop&quot;</span><span style="color: #f8f8f2">:</span>        <span style="color: #e6db74">&quot;3849378&quot;</span>
+...
+</pre></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row hidden-md hidden-lg">
+				<div id="codeContainer">
+					<div class="col-xs-12 col-md-6">
+						<h2>Code</h2>
+						<div id="mapCode">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto; width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%; overflow: hidden; text-overflow: ellipsis;"><span style="color: #f92672">&lt;div</span> 
+<span style="color: #a6e22e">id=</span><span style="color: #e6db74">&quot;mapElement&quot;</span> 
+<span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;view&quot;</span>
+<span style="color: #a6e22e">data-ex-view-class=</span><span style="color: #e6db74">&quot;Map&quot;</span>
+<span style="color: #a6e22e">data-ex-latlng=</span><span style="color: #e6db74">&quot;.latlng&quot;</span>
+<span style="color: #a6e22e">data-ex-size-key=</span><span style="color: #e6db74">&quot;.pop&quot;</span>
+<span style="color: #a6e22e">data-ex-size-coder=</span><span style="color: #e6db74">&quot;pop-coder&quot;</span>
+<span style="color: #a6e22e">data-ex-center=</span><span style="color: #e6db74">&quot;38.62756, -90.19896&quot;</span>
+<span style="color: #a6e22e">data-ex-zoom=</span><span style="color: #e6db74">&quot;4&quot;</span>
+<span style="color: #a6e22e">data-ex-show-header=</span><span style="color: #e6db74">&quot;false&quot;</span>
+<span style="color: #f92672">&gt;</span>
+<span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">class=</span><span style="color: #e6db74">&quot;map-lens&quot;</span> <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;lens&quot;</span> <span style="color: #a6e22e">style=</span><span style="color: #e6db74">&quot;display: none;&quot;</span><span style="color: #f92672">&gt;</span>
+	<span style="color: #f92672">&lt;div&gt;</span>#<span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.rank&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span>. <span style="color: #f92672">&lt;b</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.label&quot;</span><span style="color: #f92672">&gt;&lt;/b&gt;&lt;/div&gt;</span>
+	<span style="color: #f92672">&lt;div&gt;&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.pop&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span> people<span style="color: #f92672">&lt;/div&gt;</span>
+<span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
+</pre></div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h2>Data</h2>
+						<div id="mapData">
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%; text-overflow: ellipsis; overflow: hidden;"><span style="color: #f8f8f2">{</span>
+  <span style="color: #f92672">&quot;items&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[</span>
+    <span style="color: #f8f8f2">{</span>   <span style="color: #f92672">&quot;label&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;New York City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;type&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;rank&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;1&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;latlng&quot;</span><span style="color: #f8f8f2">:</span>     <span style="color: #e6db74">&quot;40.71449, -74.00713&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;state&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;New York&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;pop&quot;</span><span style="color: #f8f8f2">:</span>        <span style="color: #e6db74">&quot;8214426&quot;</span>
+    <span style="color: #f8f8f2">},</span>
+    <span style="color: #f8f8f2">{</span>   <span style="color: #f92672">&quot;label&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;Los Angeles, California&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;type&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;City&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;rank&quot;</span><span style="color: #f8f8f2">:</span>       <span style="color: #e6db74">&quot;2&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;latlng&quot;</span><span style="color: #f8f8f2">:</span>     <span style="color: #e6db74">&quot;34.05332, -118.24498&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;state&quot;</span><span style="color: #f8f8f2">:</span>      <span style="color: #e6db74">&quot;California&quot;</span><span style="color: #f8f8f2">,</span>
+      <span style="color: #f92672">&quot;pop&quot;</span><span style="color: #f8f8f2">:</span>        <span style="color: #e6db74">&quot;3849378&quot;</span>
+...
+</pre></div>
+						</div>
 					</div>
 				</div>
 			</div>

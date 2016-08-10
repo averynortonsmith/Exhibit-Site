@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,iCAAa;EACZ,UAAU,EAAE,IAAI;EAChB,uBAAuB,EAAE,GAAG;EAC5B,sBAAsB,EAAE,GAAG;EAC3B,oCAAG;IACF,WAAW,EAAE,IAAI",
+"sources": ["../scss/development.scss"],
+"names": [],
+"file": "development.css"
+}
