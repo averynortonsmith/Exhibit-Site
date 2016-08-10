@@ -8,3 +8,6 @@ subl inc/js/index.js
 
 subl development.html
 subl inc/scss/development.scss
+
+subl examples.html
+subl inc/scss/examples.scss
