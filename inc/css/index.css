@@ -6,6 +6,14 @@ body, html {
   background-color: #F0EFEF;
   color: #333; }
 
+.row.no-pad {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-pad [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
 header {
   font-family: "Lucida Grande", "Tahoma", "Helvetica", "Arial", sans-serif;
   font-size: 0px; }
@@ -56,7 +64,58 @@ header {
   #main #mapContainer {
     background-clip: border-box;
     margin-top: 10px;
-    height: 400px; }
+    height: 402px;
+    border: 1px solid #828282;
+    border-bottom-color: #141414;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #3c3c3c; }
+    #main #mapContainer #facets {
+      background-color: #3c3c3c;
+      font-family: "Lucida Grande", "Tahoma", "Helvetica", "Arial", sans-serif;
+      padding: 20px 20px;
+      min-height: 100%; }
+      #main #mapContainer #facets input {
+        padding: 2px 6px;
+        height: 26px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #f0f0f0;
+        border: none; }
+      #main #mapContainer #facets h1 {
+        font-size: 16px;
+        margin: -20px -20px 10px -20px;
+        padding: 10px 20px;
+        background-color: #282828;
+        letter-spacing: 1px; }
+      #main #mapContainer #facets h2 {
+        font-size: 14px;
+        font-weight: normal;
+        margin: 4px 0px; }
+      #main #mapContainer #facets #states {
+        margin-top: 10px; }
+        #main #mapContainer #facets #states .exhibit-facet-header-title {
+          font-size: 14px;
+          font-weight: normal; }
+        #main #mapContainer #facets #states .exhibit-facet-header-filterControl {
+          display: none !important; }
+        #main #mapContainer #facets #states .exhibit-facet-body {
+          background-color: #282828;
+          height: 230px;
+          border: 1px solid #555;
+          border-radius: 4px; }
+          #main #mapContainer #facets #states .exhibit-facet-body .exhibit-facet-value-checkbox {
+            display: none; }
+          #main #mapContainer #facets #states .exhibit-facet-body .exhibit-facet-value:hover {
+            background-color: #1e1e1e; }
+          #main #mapContainer #facets #states .exhibit-facet-body .exhibit-facet-value-selected {
+            font-weight: normal;
+            background-color: #1e1e1e; }
+          #main #mapContainer #facets #states .exhibit-facet-body a {
+            color: inherit;
+            text-decoration: none; }
+        #main #mapContainer #facets #states .exhibit-resizableDivWidget-resizer {
+          display: none; }
   #main #map #mainImg {
     background-clip: content-box;
     background-image: url("../../files/map.png");
@@ -67,10 +126,9 @@ header {
   #main #map #mapElement {
     color: #333; }
     #main #map #mapElement .exhibit-mapView-map {
-      border: 1px solid #8c8c8c;
-      border-bottom-color: #141414;
-      border-top-right-radius: 4px;
-      border-top-left-radius: 4px; }
+      border-top-left-radius: 4px;
+      background-clip: border-box;
+      border: none; }
     #main #map #mapElement .exhibit-resizableDivWidget-resizer {
       display: none; }
     #main #map #mapElement .exhibit-legendWidget {
@@ -93,7 +151,7 @@ header {
     padding: 10px 30px; }
   #main #infoContainer #information {
     border: 1px solid #ccc;
-    background-color: gainsboro;
+    background-color: #eaeaea;
     padding: 30px;
     color: #333;
     font-family: "Lucida Grande", "Tahoma", "Helvetica", "Arial", sans-serif;

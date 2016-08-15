@@ -11,3 +11,6 @@ subl inc/scss/development.scss
 
 subl examples.html
 subl inc/scss/examples.scss
+
+subl tutorial.html
+subl inc/scss/tutorial.scss

@@ -26,7 +26,7 @@
 					<nav>
 						<a href="./" class="active">Home</a>
 						<a href="./examples.html">Examples</a>
-						<a href="./">Tutorial</a>
+						<a href="./tutorial.html">Tutorial</a>
 						<a href="./">Docs</a>
 						<a href="./development.html">Developement</a>
 					</nav>
@@ -35,7 +35,7 @@
 					<nav id="smallNav">
 						<a href="./" class="active">Home</a>
 						<a href="./examples.html">Examples</a>
-						<a href="./">Tutorial</a>
+						<a href="./tutorial.html">Tutorial</a>
 						<a href="./">Docs</a>
 						<a href="./development.html">Developement</a>
 					</nav>
@@ -44,26 +44,36 @@
 		</header>
 
 		<div class="container" id="main">
-			<div class="row">
-				<div class="col-xs-12" id="mapContainer">
-					<div id="map">
-						<div data-ex-role="coder" data-ex-coder-class="SizeGradient" id="pop-coder" data-ex-gradient-points="0, 10; 10000000, 100" >
+			<div class="row no-pad">
+				<div id="mapContainer">
+					<div class="col-xs-12 col-md-8">
+						<div id="map">
+							<div data-ex-role="coder" data-ex-coder-class="SizeGradient" id="pop-coder" data-ex-gradient-points="0, 10; 10000000, 100" >
+							</div>
+							<div 
+								id="mapElement" 
+								data-ex-role="view"
+								data-ex-view-class="Map"
+								data-ex-latlng=".latlng"
+								data-ex-size-key=".pop"
+								data-ex-size-coder="pop-coder"
+								data-ex-center="38.62756, -90.19896"
+								data-ex-zoom="3"
+								data-ex-show-header="false"
+							>
+							<div class="map-lens" data-ex-role="lens" style="display: none;">
+								<div>#<span data-ex-content=".rank"></span>. <b data-ex-content=".label"></b></div>
+								<div><span data-ex-content=".pop"></span> people</div>
+							</div>
+							</div>
 						</div>
-						<div 
-							id="mapElement" 
-							data-ex-role="view"
-							data-ex-view-class="Map"
-							data-ex-latlng=".latlng"
-							data-ex-size-key=".pop"
-							data-ex-size-coder="pop-coder"
-							data-ex-center="38.62756, -90.19896"
-							data-ex-zoom="4"
-							data-ex-show-header="false"
-						>
-						<div class="map-lens" data-ex-role="lens" style="display: none;">
-							<div>#<span data-ex-content=".rank"></span>. <b data-ex-content=".label"></b></div>
-							<div><span data-ex-content=".pop"></span> people</div>
-						</div>
+					</div>
+					<div class="col-xs-12 col-md-4" id="facets">
+						<h1>Filter Items:</h1>
+						<h2>city name</h2>
+						<div data-ex-role="facet" data-ex-facet-class="TextSearch"></div>
+						<div id="states" data-ex-role="facet" 
+						  data-ex-expression=".state">
 						</div>
 					</div>
 				</div>
@@ -88,6 +98,7 @@
 	<span style="color: #f92672">&lt;div&gt;</span>#<span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.rank&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span>. <span style="color: #f92672">&lt;b</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.label&quot;</span><span style="color: #f92672">&gt;&lt;/b&gt;&lt;/div&gt;</span>
 	<span style="color: #f92672">&lt;div&gt;&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.pop&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span> people<span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
+...
 </pre></div>
 						</div>
 					</div>
@@ -136,6 +147,7 @@
 	<span style="color: #f92672">&lt;div&gt;</span>#<span style="color: #f92672">&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.rank&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span>. <span style="color: #f92672">&lt;b</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.label&quot;</span><span style="color: #f92672">&gt;&lt;/b&gt;&lt;/div&gt;</span>
 	<span style="color: #f92672">&lt;div&gt;&lt;span</span> <span style="color: #a6e22e">data-ex-content=</span><span style="color: #e6db74">&quot;.pop&quot;</span><span style="color: #f92672">&gt;&lt;/span&gt;</span> people<span style="color: #f92672">&lt;/div&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;&lt;/div&gt;</span>
+...
 </pre></div>
 						</div>
 					</div>
@@ -177,12 +189,14 @@
 								consequat.
 
 								<h4>Getting Started with Exhibit:</h4>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								dev to do:
+								make exhibit of exhibits
+								add facets to homepage exhibit
+								diversify exhibit examples
+								finish tutorials page
+								start docs page
+								change to use remote exhibit installation
+								put demo copy online
 							</div>
 							<div class="col-xs-12 col-sm-6">
 								<h4 style="margin-top: 0px;" class="hidden-xs">Licence:</h4>
