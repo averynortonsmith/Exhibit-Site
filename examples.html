@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="inc/css/examples.css">
 		<link rel="shortcut icon" href="files/fav.ico" />
 
-		<link href="exhibit/examples.json" type="application/json" rel="exhibit/data" />
+		<link href="exhibit/examplesFull.json" type="application/json" rel="exhibit/data" />
 		<script src="https://scripts.mit.edu/~averyn/exhibit/scripted/dist/exhibit-api.js"></script>
 		<link rel="exhibit-extension" type="text/javascript" href="http://localhost/exhibit-all/exhibit/scripted/demos/api/extensions/map/map-extension.js" data-ex-apikey="AIzaSyCDO3EXWKJms5T38db48czFJZDunhYIzn8"/>
 	</head>
@@ -50,10 +50,13 @@
 					<div id="information">
 						<h2>Exhibit Examples:</h2>
 						<div class="row">
-							<div class="col-xs-12 col-xs-2" id="facets">
+							<div class="col-xs-12 col-lg-2" id="facets">
+								<h3>Search Exhibits</h3>
 								<div id="search" data-ex-role="facet" data-ex-facet-class="TextSearch"></div>
+								<div class="facet" id="facetsFacet" data-ex-role="facet" data-ex-expression=".Facets" data-ex-show-missing="false"></div>
+								<div class="facet" id="viewsFacet" data-ex-role="facet" data-ex-expression=".Views" data-ex-show-missing="false"></div>
 							</div>
-							<div class="col-xs-12 col-xs-10">
+							<div class="col-xs-12 col-lg-10">
 								<div data-ex-role="view">
 								</div>
 							</div>

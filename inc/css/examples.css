@@ -17,6 +17,18 @@
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   color: #fff; }
+  #main #infoContainer #information .exhibit-collectionView-footer a {
+    color: inherit !important;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    background-color: #505050;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 200ms; }
+    #main #infoContainer #information .exhibit-collectionView-footer a:hover {
+      background-color: #5a5a5a; }
   #main #infoContainer #information .exampleContainer {
     border: 1px solid #2d2d2d;
     box-shadow: 0px 0px 2px 2px rgba(30, 30, 30, 0.2);
@@ -43,11 +55,50 @@
     padding: 0px; }
 #main #infoContainer #facets {
   margin-top: 15px; }
+  #main #infoContainer #facets h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #505050;
+    padding: 10px 0px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px rgba(30, 30, 30, 0.2); }
   #main #infoContainer #facets #search input {
     padding: 2px 6px;
     height: 26px;
     border-radius: 4px;
-    background-color: gainsboro;
-    border: none; }
+    background-color: #646464;
+    border: 1px solid #8c8c8c;
+    color: #fff; }
+  #main #infoContainer #facets .facet {
+    margin-top: 10px; }
+    #main #infoContainer #facets .facet#facetsFacet .exhibit-facet-body {
+      background-color: #282828;
+      height: 250px; }
+    #main #infoContainer #facets .facet#viewsFacet .exhibit-facet-body {
+      background-color: #282828;
+      height: 200px; }
+    #main #infoContainer #facets .facet .exhibit-facet-header-title {
+      font-size: 14px;
+      font-weight: normal; }
+    #main #infoContainer #facets .facet .exhibit-facet-header-filterControl {
+      display: none !important; }
+    #main #infoContainer #facets .facet .exhibit-facet-body {
+      background-color: #282828;
+      border: 1px solid #555;
+      border-radius: 4px; }
+      #main #infoContainer #facets .facet .exhibit-facet-body .exhibit-facet-value-checkbox {
+        display: none; }
+      #main #infoContainer #facets .facet .exhibit-facet-body .exhibit-facet-value:hover {
+        background-color: #1e1e1e; }
+      #main #infoContainer #facets .facet .exhibit-facet-body .exhibit-facet-value-selected {
+        font-weight: normal;
+        background-color: #1e1e1e; }
+      #main #infoContainer #facets .facet .exhibit-facet-body a {
+        color: inherit;
+        text-decoration: none; }
+    #main #infoContainer #facets .facet .exhibit-resizableDivWidget-resizer {
+      display: none; }
 
 /*# sourceMappingURL=examples.css.map */
