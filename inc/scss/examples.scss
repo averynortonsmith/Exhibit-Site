@@ -15,10 +15,11 @@
 		#information {
 			padding-bottom: 20px;
 			border: 1px solid rgb(70, 70, 70);
-			background-color: rgb(64, 64, 64);
+			background-color: rgb(55, 55, 55);
 			margin-top: 10px;
 			border-top-right-radius: 4px;
 			border-top-left-radius: 4px;
+			color: #fff;
 			.exampleContainer {
 				border: 1px solid rgb(45, 45, 45);
 				box-shadow: 0px 0px 2px 2px rgba(30, 30, 30, .2);
@@ -27,14 +28,39 @@
 					height: 300px;
 					background-size: cover;
 					background-position: top left;
+					overflow: hidden;
+					img {
+						height: 100%;
+					}
 				}
 				h4 {
-					color: #fff;
 					background-color: rgb(80, 80, 80);
 					text-align: center;
 					margin: 0px;
 					font-weight: normal;
 					padding: 4px;
+					color: #fff;
+				}
+			}
+			.exhibit-collectionView-header {
+				display: none;
+			}
+			ol {
+				list-style-type: none;
+			}
+			.exhibit-tileView-body {
+				padding: 0px;
+			}
+		}
+		#facets {
+			margin-top: 15px;
+			#search {
+				input {
+					padding: 2px 6px;
+					height: 26px;
+					border-radius: 4px;
+					background-color: rgb(220, 220, 220);
+					border: none;
 				}
 			}
 		}

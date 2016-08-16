@@ -1,0 +1,25 @@
+{"items": 
+
+[{"label": "US Presidents",
+"link": "http://simile-widgets.org/exhibit3/examples/presidents/presidents.html",
+"img": "files/examples/presidents.png"},
+
+{"label": "City Populations",
+"link": "http://simile-widgets.org/exhibit3/examples/cities/cities.html",
+"img": "files/examples/cities.png"},
+
+{"label": "MIT Nobel Prize List",
+"link": "http://simile-widgets.org/exhibit3/examples/nobelists/nobelists.html",
+"img": "files/examples/nobelists.png"},
+
+{"label": "Flags of the World",
+"link": "http://simile-widgets.org/exhibit3/examples/flags/flags.html",
+"img": "files/examples/flags.png"},
+
+{"label": "US Senate Bills",
+"link": "http://simile-widgets.org/exhibit3/examples/senate/senate.html",
+"img": "files/examples/senate.png"},
+
+{"label": "CSAIL Principal Investigators",
+"link": "http://simile-widgets.org/exhibit3/examples/CSAIL-PIs/CSAIL-PIs.html",
+"img": "files/examples/CSAIL-PIs.png"}]}
