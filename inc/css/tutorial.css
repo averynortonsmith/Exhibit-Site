@@ -7,8 +7,17 @@
   border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
   #main #infoContainer #information iframe {
-    border: 1px solid #aaaaaa; }
+    border: 1px solid #c8c8c8;
+    background-color: whitesmoke; }
   #main #infoContainer #information .exhibit {
-    border: 1px solid #aaaaaa; }
+    border: 1px solid #c8c8c8;
+    height: 600px;
+    width: 100%;
+    overflow: scroll;
+    background-color: whitesmoke;
+    padding: 10px; }
+  #main #infoContainer #information .hilight {
+    border-radius: 4px;
+    overflow: hidden; }
 
 /*# sourceMappingURL=tutorial.css.map */
