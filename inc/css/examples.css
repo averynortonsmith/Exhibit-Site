@@ -53,6 +53,8 @@
     list-style-type: none; }
   #main #infoContainer #information .exhibit-tileView-body {
     padding: 0px; }
+  #main #infoContainer #information .exhibit-toolboxWidget-button {
+    display: none; }
 #main #infoContainer #facets {
   margin-top: 15px; }
   #main #infoContainer #facets h3 {
@@ -68,14 +70,14 @@
     padding: 2px 6px;
     height: 26px;
     border-radius: 4px;
-    background-color: #646464;
-    border: 1px solid #8c8c8c;
-    color: #fff; }
+    background-color: #c8c8c8;
+    border: 1px solid gainsboro;
+    color: #333; }
   #main #infoContainer #facets .facet {
     margin-top: 10px; }
     #main #infoContainer #facets .facet#facetsFacet .exhibit-facet-body {
       background-color: #282828;
-      height: 250px; }
+      height: 200px; }
     #main #infoContainer #facets .facet#viewsFacet .exhibit-facet-body {
       background-color: #282828;
       height: 200px; }

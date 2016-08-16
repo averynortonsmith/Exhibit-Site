@@ -1,10 +1,14 @@
 #main #infoContainer #information {
-  padding: 50px;
+  padding: 70px;
   padding-top: 30px;
   border: 1px solid #aaaaaa;
   margin-top: 10px;
   color: #333 !important;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
+  #main #infoContainer #information iframe {
+    border: 1px solid #aaaaaa; }
+  #main #infoContainer #information .exhibit {
+    border: 1px solid #aaaaaa; }
 
 /*# sourceMappingURL=tutorial.css.map */

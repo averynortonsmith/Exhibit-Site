@@ -1,13 +1,20 @@
 #main {
 	#infoContainer {
 		#information {
-			padding: 50px;
+			padding: 70px;
 			padding-top: 30px;
 			border: 1px solid rgb(170, 170, 170);
 			margin-top: 10px;
 			color: #333 !important;
 			border-top-right-radius: 4px;
 			border-top-left-radius: 4px;
+			iframe {
+				border: 1px solid rgb(170, 170, 170);
+				// background-color: rgb(230, 230, 230);
+			}
+			.exhibit {
+				border: 1px solid rgb(170, 170, 170);
+			}
 		}
 	}
 }
