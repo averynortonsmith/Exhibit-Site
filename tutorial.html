@@ -11,9 +11,9 @@
 		<link rel="shortcut icon" href="files/fav.ico" />
 
 		<link href="files/json/egypt.js" type="application/json" rel="exhibit/data" />
-		<script src="http://api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js"></script>
-		<link rel="exhibit-extension" href="http://api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js"/>
-		<link rel="exhibit-extension" type="text/javascript" href="http://localhost/exhibit-all/exhibit/scripted/demos/api/extensions/map/map-extension.js" data-ex-apikey="AIzaSyCDO3EXWKJms5T38db48czFJZDunhYIzn8"/>
+		<script src="//api.simile-widgets.org/exhibit/3.1.0rc/exhibit-api.js"></script>
+		<link rel="exhibit-extension" href="//api.simile-widgets.org/exhibit/HEAD/extensions/time/time-extension.js"/>
+		<link rel="exhibit-extension" type="text/javascript" href="//localhost/exhibit-all/exhibit/scripted/demos/api/extensions/map/map-extension.js" data-ex-apikey="AIzaSyCDO3EXWKJms5T38db48czFJZDunhYIzn8"/>
 	</head>
 
 	<body>
@@ -58,9 +58,9 @@
 
 							<div class="narrative">
 								Welcome!  This is a hands-on tutorial from CAR 2012 on
-								producing <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html">this exhibit</a>.  This document will
+								producing <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html">this exhibit</a>.  This document will
 								walk you through all the steps needed to create it.  Alternatively,
-								you can download <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/hands-on.zip">this zip file</a> which
+								you can download <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/hands-on.zip">this zip file</a> which
 								contains all the relevant documents and work through them locally
 								(warning: the chrome browser won't let this demo open local files, so
 								if you want to do this you'll need to use firefox or safari or put
@@ -70,7 +70,7 @@
 
 								<h3>1.1: New Visualization Tags for your HTML</h3>
 
-								The idea behind <a href="http://simile-widgets.org/exhibit">Exhibit</a> is that putting a map or a sortable list or a timeline into your web page shouldn't be a hard programming problem, but rather a simple part of authoring your article.  Exhibit lets you incorporate tabular data---spreadsheets---into your web pages.  Then it defines a bunch of new tags---like &lt;map&gt;, &lt;timeline&gt;, and &lt;facet&gt;---that you can drop into your html documents.  You attach them to the data the same way you make charts in excel: by specifying the data columns that contain the coordinates, dates, or attributes for the visualizations.  Anyone visiting the page will see and interact with all the rich visuals you specified with the tags.
+								The idea behind <a href="//simile-widgets.org/exhibit">Exhibit</a> is that putting a map or a sortable list or a timeline into your web page shouldn't be a hard programming problem, but rather a simple part of authoring your article.  Exhibit lets you incorporate tabular data---spreadsheets---into your web pages.  Then it defines a bunch of new tags---like &lt;map&gt;, &lt;timeline&gt;, and &lt;facet&gt;---that you can drop into your html documents.  You attach them to the data the same way you make charts in excel: by specifying the data columns that contain the coordinates, dates, or attributes for the visualizations.  Anyone visiting the page will see and interact with all the rich visuals you specified with the tags.
 								<h3>1.2: No Installation</h3>
 								There is no software to install.  Exhibit is implemented as an open source javascript library you just include in your web page.  Because it works entirely on the client browser, it can be integrated into whatever CMS you are using.
 
@@ -78,12 +78,12 @@
 								Exhibit is designed for small data sets.  It's perfect for showing a few thousand items.  If you have ten thousand, it will load a bit slowly but will be very responsive after.  If you have 50,000 it will still work fine but interaction will start to slow down.  Some exhibits have been created with as many as 250,000 items.
 
 								<h3>1.4: What you need to know for this walkthrough</h3>
-								Exhibit is a bunch of new html tags---tags that WYSIWYG html editors don't know.  The most direct way to edit an exhibit is to edit the HTML source directly (or copy someone else's).  That's what we'll focus on in this hands-on.  We have projects under way to make authoring easier: our <a href="http://projects.csail.mit.edu/datapress">Datapress</a> project provides a wordpress extension that lets you WYSIWYG edit your exhibit into a blog post, and <a href="http://projects.csail.mit.edu/exhibit/Dido">Dido</a> is a (still experimental) standalong WYSIWYG editor for exhibits.
+								Exhibit is a bunch of new html tags---tags that WYSIWYG html editors don't know.  The most direct way to edit an exhibit is to edit the HTML source directly (or copy someone else's).  That's what we'll focus on in this hands-on.  We have projects under way to make authoring easier: our <a href="//projects.csail.mit.edu/datapress">Datapress</a> project provides a wordpress extension that lets you WYSIWYG edit your exhibit into a blog post, and <a href="//projects.csail.mit.edu/exhibit/Dido">Dido</a> is a (still experimental) standalong WYSIWYG editor for exhibits.
 
 								<h2>2: Walkthrough</h2>
 
 								In this walkthrough, we're going to
-								create <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html" target="result">this visualization</a> of a bunch of
+								create <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html" target="result">this visualization</a> of a bunch of
 								tweets curated by Andy Carvin during the Tahrir Square riots.  We
 								originally produced this Exhibit, together with Sisi Wei of the
 								Washington Post, at an ONA Hackathon in Boston.
@@ -94,7 +94,7 @@
 									To begin using exhibit, you need to put a link to the Exhibit library in the head of your html document:
 									<p>
 										<code>
-<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;http://api.simile-widgets.org/exhibit/STABLE/exhibit-api.js&quot;</span> <span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;//api.simile-widgets.org/exhibit/STABLE/exhibit-api.js&quot;</span> <span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>
 										</code>
 									</p>
 									<p>
@@ -115,9 +115,9 @@
 								</div>
 								<h3>2.3: Link to Your Data</h3>
 								<div class="narrative">
-									Exhibit can read a variety of tabular data formats, including TSV and CSV.  Exhibit's "native" format is JSON, a standard representation of data on the web.  It can read some XML formats.  Using <a href="http://service.simile-widgets.org/babel">Babel</a>, you can translate certain other formats, such as excel spreadsheets, into Exhibit json.   Exhibit can also directly read from Google Spreadsheets (giving you the ability to dynamically udpdate the data in your presentation).  In general, web security features require that your data file be on the <b>same web site</b> as your Exhibit html document.  Google Spreadsheets uses a special technique called <b>JSONP</b> to get around this restriction.  Your data providers can use it too but it requires learning.
+									Exhibit can read a variety of tabular data formats, including TSV and CSV.  Exhibit's "native" format is JSON, a standard representation of data on the web.  It can read some XML formats.  Using <a href="//service.simile-widgets.org/babel">Babel</a>, you can translate certain other formats, such as excel spreadsheets, into Exhibit json.   Exhibit can also directly read from Google Spreadsheets (giving you the ability to dynamically udpdate the data in your presentation).  In general, web security features require that your data file be on the <b>same web site</b> as your Exhibit html document.  Google Spreadsheets uses a special technique called <b>JSONP</b> to get around this restriction.  Your data providers can use it too but it requires learning.
 									<p>
-										For this hands-on, we've provided a <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.txt">TSV file</a> and a <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.js">JSON file</a> that you can see to the right.  Either one will do to provide the data.
+										For this hands-on, we've provided a <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.txt">TSV file</a> and a <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.js">JSON file</a> that you can see to the right.  Either one will do to provide the data.
 									</p><p>
 										To tell Exhibit about your data, you put a link to it in the head of your document.  To link to the tsv file, we write
 									</p><p>
@@ -137,16 +137,16 @@
 									</p><p>
 										Either will do.  Note that you need to specify the format of the file as a "type" argument.  If you want to link directly to a Google Spreadsheet, see the discussion at the end of this tutorial. 
 									</p><p>
-										Exhibit has only limited ability to handle errors in the input data files.  For example, a stray quotation mark in our tweets TSV file will lead Exhibit to treat the data following it as a quoted string---likely not what you want.  And Exhibit is not particularly good about reporting error messages.  The best support is provided with the JSON format, where we provide a <a href="http://service.simile-widgets.org/babel/validator">validation service</a> that tells you if you have any syntax errors in your data file.
+										Exhibit has only limited ability to handle errors in the input data files.  For example, a stray quotation mark in our tweets TSV file will lead Exhibit to treat the data following it as a quoted string---likely not what you want.  And Exhibit is not particularly good about reporting error messages.  The best support is provided with the JSON format, where we provide a <a href="//service.simile-widgets.org/babel/validator">validation service</a> that tells you if you have any syntax errors in your data file.
 
 									</p>
 								</div>
 
 								<div class="example">
 									<h3>TSV file</h3>
-									<iframe src="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.txt" style="overflow:auto" height="250px" width="100%"></iframe>
+									<iframe src="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.txt" style="overflow:auto" height="250px" width="100%"></iframe>
 									<h3>JSON file</h3>
-									<iframe src="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.js" style="overflow:auto" height="250px" width="100%"></iframe>
+									<iframe src="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.js" style="overflow:auto" height="250px" width="100%"></iframe>
 								</div>
 
 								<h3>2.4: Views</h3>
@@ -279,12 +279,12 @@
 										</p>
 										<p>
 											<code>
-												&lt;script src=&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;&gt;&lt;/script&gt;
+												&lt;script src=&quot;//trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;&gt;&lt;/script&gt;
 										</code>
 										<p>
 											The timeline view is shown to the right.  If you click on a particular item, you'll get a pop-up bubble with more detail.  The bubble contents are determined by the lens associated with this view.
 
-											If we add this timeline to our previous Exhibit, we get <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt3.html">this one</a>
+											If we add this timeline to our previous Exhibit, we get <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt3.html">this one</a>
 										</p>
 									</div>
 									<div class="example">
@@ -301,7 +301,7 @@
 										With three views, the presentation is getting a little long.  We can pack things together using a <b>View Panel</b>.  The View Panel gathers several views together, give each one a title, and lets the user flip between them so that only one is occupying page space at a time.  As usual, you define the view panel with an html tag:
 										<p>
 											<code>
-<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>											
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;//trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>											
 											</code>
 										</p>
 										<p>
@@ -379,12 +379,12 @@
 										We can similarly add a map as we did the timeline.   Like the timeline, maps need their own extension script added to the head:
 										<p>
 											<code>
-<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/map/map-extension.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;//trunk.simile-widgets.org/exhibit/api/extensions/map/map-extension.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>
 											</code>
 										</p>
 
 										For maps we need (at least) Latitude/Longitude data for each item we want to plot, and that isn't available in our data set.  The simplest approach is to add a new column to the spreadsheet and add a latitude and longitude for each item.
-										But for Andy's tweets we've taken a different approach.  These tweets happened at four locations named in our data: tahrir, talaat harb, museum, and Omar Makhram.  We are going to associate latitude/longitude with those locations, then connect them back to the specific tweets.  The latitude/longitude data is in another document, either a <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/locations.txt">tsv file</a> or a <a href="https://docs.google.com/spreadsheet/pub?key=0AhAtARHyRN5adGZKTWstczJvNjEyU1JEUGdsd1UwZ0E&output=html">another google spreadsheet</a>.  It uses the locations as labels and gives each of them a "latlng" property, as well as a type.  We can include this data in our Exhibit:
+										But for Andy's tweets we've taken a different approach.  These tweets happened at four locations named in our data: tahrir, talaat harb, museum, and Omar Makhram.  We are going to associate latitude/longitude with those locations, then connect them back to the specific tweets.  The latitude/longitude data is in another document, either a <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/locations.txt">tsv file</a> or a <a href="https://docs.google.com/spreadsheet/pub?key=0AhAtARHyRN5adGZKTWstczJvNjEyU1JEUGdsd1UwZ0E&output=html">another google spreadsheet</a>.  It uses the locations as labels and gives each of them a "latlng" property, as well as a type.  We can include this data in our Exhibit:
 										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;link</span> <span style="color: #a6e22e">href=</span><span style="color: #e6db74">&quot;locations.txt&quot;</span> <span style="color: #a6e22e">rel=</span><span style="color: #e6db74">&quot;exhibit/data&quot;</span> <span style="color: #a6e22e">type=</span><span style="color: #e6db74">&quot;text/tsv&quot;</span><span style="color: #f92672">/&gt;</span></pre></div>
@@ -411,7 +411,7 @@
 											The most important option here specifies which latitude and longitude define the placement of items on the map.   This option contains something new: a <b>chain</b> of properties ".location.latlng".  The way to read this is as follows: for the item being displayed, look up its location.  That will give you the label of another item (one of the four locations).  Look up the latlng property of that item.  Exhibit lets you chain together arbitrary sequences of properties.  Breaking up your data this way is useful because now if you decide to update the latlng of a location you only need to do it in one place, instead of changing the value for every single item at that location.
 										</p>
 										<p>
-											There are also, as with the timeline, options to set the initial center and zoom level of them map, to specify properties that determine the color and size of icons on the map, or even to associate an image or icon with each item that will show on the map---there's no useful icon for this exhibit, but you can see an example in this exhibit of <a href="http://simile-widgets.org/exhibit/examples/presidents/presidents.html">U.S. Presidents</a>
+											There are also, as with the timeline, options to set the initial center and zoom level of them map, to specify properties that determine the color and size of icons on the map, or even to associate an image or icon with each item that will show on the map---there's no useful icon for this exhibit, but you can see an example in this exhibit of <a href="//simile-widgets.org/exhibit/examples/presidents/presidents.html">U.S. Presidents</a>
 										</p>
 										<p>
 											Once we've included the 4 "location" objects, they by default become part of the data collection and get displayed in various lists.  We don't want that.  We use the <b>collection</b> tag to tell Exhibit which items we actually want to show in our views:
@@ -444,7 +444,7 @@
 									<h3>2.12: Wrap Up: Css</h3>
 
 									<div class="narrative">
-										We've now incorporated all the exhibit tags necessary for our final visualization.  It remains to nicely style the result using CSS.  This is just a plain html page, so you can style it the usual way.  Exhibit assigns specific classes to the various elements it creates, and you can assign styles to those classes in order to style the exhibit elements.  The easiest way to identify the styles is using <a href="http://www.getfirebug.com">firebug</a> or some other DOM inspection tool: render the page, then use "inspect element" to identify the class that Exhibit has assigned to the rendered element.  As an example, the (default) list facets get a class of "exhibit-facet", so we can style them to all float on the same row using the following CSS:
+										We've now incorporated all the exhibit tags necessary for our final visualization.  It remains to nicely style the result using CSS.  This is just a plain html page, so you can style it the usual way.  Exhibit assigns specific classes to the various elements it creates, and you can assign styles to those classes in order to style the exhibit elements.  The easiest way to identify the styles is using <a href="//www.getfirebug.com">firebug</a> or some other DOM inspection tool: render the page, then use "inspect element" to identify the class that Exhibit has assigned to the rendered element.  As an example, the (default) list facets get a class of "exhibit-facet", so we can style them to all float on the same row using the following CSS:
 										<br/><br/>
 										<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;style&gt;</span>
@@ -456,11 +456,11 @@
 	<span style="color: #66d9ef">width</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">170px</span><span style="color: #f8f8f2">;</span>
   <span style="color: #f8f8f2">}</span>
 <span style="color: #f92672">&lt;/style&gt;</span></pre></div></code><br/>
-									<p>With this done (and more CSS) we produce our <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html" target="result">final exhibit</a>.</p><br/>
+									<p>With this done (and more CSS) we produce our <a href="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html" target="result">final exhibit</a>.</p><br/>
 								</div>
 
 								<div class="example">
-									<iframe width="100%" height="600px" src="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html"></iframe>
+									<iframe width="100%" height="600px" src="//people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html"></iframe>
 								</div>
 
 								<h3>2.13: Using Google Spreadsheets</h3>
@@ -472,7 +472,7 @@
 										If you want to use a Google Spreadsheet like this, you need to <b>publish</b> it so Exhibit can access (but not edit) the data.  To do so, click on the "File" menu and select "Publish to the Web".  This will open a dialog where you should click "Publish".
 									</p>
 									<p>
-										As a final step, you need to get a url that you can put in the exhibit link tag to tell it where to get the published data.  The address you're using to look at your spreadsheet won't work because it doesn't provide the data in the right format.  Google has made it strangely difficult to generate the link you need, so we've created <a href="http://projects.csail.mit.edu/exhibit/googleJSON/">this little form</a> to generate it for you.  Go to that page and paste in the link to the sheet you're currently looking at.  The tool will give you the url you need to use in the link tag.
+										As a final step, you need to get a url that you can put in the exhibit link tag to tell it where to get the published data.  The address you're using to look at your spreadsheet won't work because it doesn't provide the data in the right format.  Google has made it strangely difficult to generate the link you need, so we've created <a href="//projects.csail.mit.edu/exhibit/googleJSON/">this little form</a> to generate it for you.  Go to that page and paste in the link to the sheet you're currently looking at.  The tool will give you the url you need to use in the link tag.
 									</p>
 									<p>
 										For our example, for our Egypt Exhibit, you can put the following link to the tweets spreadsheet in the head of the document instead of the previous json or tsv link:
@@ -505,10 +505,10 @@
 									<h3>2.14: Next Steps</h3>
 
 									<div>
-										As you build your own exhibits, you'll probably want to look at a bunch of <b>examples</b>.  Remember, since these are just html files, you can download them and they'll work; then you can start to tweak them.  The <a href="http://simile-widgets.org/exhibit">Exhibit web site</a> has a bunch of examples we've built.  We've also set up an <a href="http://edwardbenson.com/viz/exhibits.html">exhibit of exhibits</a> that other people have made, to give you an idea of what can be done with the tool.  As you build your own, you'll probably want to check the <a href="http://simile-widgets.org/wiki/Reference_Documentation_for_Exhibit">Exhibit reference documentation</a> which lists all the different exhibit tags and the options you can set on them.  
+										As you build your own exhibits, you'll probably want to look at a bunch of <b>examples</b>.  Remember, since these are just html files, you can download them and they'll work; then you can start to tweak them.  The <a href="//simile-widgets.org/exhibit">Exhibit web site</a> has a bunch of examples we've built.  We've also set up an <a href="//edwardbenson.com/viz/exhibits.html">exhibit of exhibits</a> that other people have made, to give you an idea of what can be done with the tool.  As you build your own, you'll probably want to check the <a href="//simile-widgets.org/wiki/Reference_Documentation_for_Exhibit">Exhibit reference documentation</a> which lists all the different exhibit tags and the options you can set on them.  
 
 										<p>
-											If you don't like hand-editing html, we have projects under way to make authoring easier. Our <a href="http://projects.csail.mit.edu/datapress">Datapress</a> project provides a wordpress extension that lets you WYSIWYG edit your exhibit into a blog post, and <a href="http://projects.csail.mit.edu/exhibit/Dido">Dido</a> is a (still experimental) standalong WYSIWYG editor for exhibits.
+											If you don't like hand-editing html, we have projects under way to make authoring easier. Our <a href="//projects.csail.mit.edu/datapress">Datapress</a> project provides a wordpress extension that lets you WYSIWYG edit your exhibit into a blog post, and <a href="//projects.csail.mit.edu/exhibit/Dido">Dido</a> is a (still experimental) standalong WYSIWYG editor for exhibits.
 										</p>
 									</div>
 								</div>
@@ -523,13 +523,13 @@
 			<div class="row">
 				<div class="col-xs-12">
 					<footer>
-						Copyright © <a href="http://web.mit.edu/">Massachusetts Institute of Technology</a> and Contributors 2006-2013 ~ Some rights reserved
+						Copyright © <a href="//web.mit.edu/">Massachusetts Institute of Technology</a> and Contributors 2006-2013 ~ Some rights reserved
 					</footer>
 				</div>
 			</div>
 		</div>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://raw.githubusercontent.com/averynortonsmith/HTMLViews/master/HTMLViews.js"></script>
 
 		<script src="inc/js/index.js" ></script>
