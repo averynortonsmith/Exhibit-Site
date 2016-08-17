@@ -238,7 +238,7 @@
 									<h3>2.7: Tabular View</h3>
 
 									<div class="narrative">
-									 	We can add other views, again using the view tag but now specifying the view type using the <code>viewClass</code> attribute.  Like different kinds of charts in Excel, different types of views need different configuration options.  These options are specified as attributes of the view tag.  Let's start with a tabular view.  This is basically a normal table, although Exhibit does give the user the ability to sort the table by clicking on the columns headings.
+										We can add other views, again using the view tag but now specifying the view type using the <code>viewClass</code> attribute.  Like different kinds of charts in Excel, different types of views need different configuration options.  These options are specified as attributes of the view tag.  Let's start with a tabular view.  This is basically a normal table, although Exhibit does give the user the ability to sort the table by clicking on the columns headings.
 										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> 
@@ -256,13 +256,13 @@
 									<div class="example">
 										<div class="exhibit">
 											<div data-ex-role="view" data-ex-label="Table" data-ex-view-class="Tabular" data-ex-columns=".username,.role,.location,.label" data-ex-column-labels="Who,Role,Where?,Tweet"></div>
-									  	</div>
+										</div>
 									</div>
 
 									<h3>2.8: Timeline</h3>
 
 									<div class="narrative">
-								  		Now let's place our items on a timeline.  To do that we need to specify which properties define the start (and optionally end) points of the  timeline position of the item.  We do so by placing the attributes <code>data-ex-start</code> and (optionally) <code>data-ex-end</code> in the view description.  We can also <code>color code</code> the marks on the timeline to reflect some categorization, by setting the <code>data-ex-colorKey</code> option.  Each of these options expects the specification of a (period-prefixed) property name that should be used.  We can also configure other natural quantities like the the time-unit of the timeline tickmarks (minute, day, week, hour, year etc.) on both the top and bottom bands of the timeline, as well as the spacing of those tickmarks.  
+										Now let's place our items on a timeline.  To do that we need to specify which properties define the start (and optionally end) points of the  timeline position of the item.  We do so by placing the attributes <code>data-ex-start</code> and (optionally) <code>data-ex-end</code> in the view description.  We can also <code>color code</code> the marks on the timeline to reflect some categorization, by setting the <code>data-ex-colorKey</code> option.  Each of these options expects the specification of a (period-prefixed) property name that should be used.  We can also configure other natural quantities like the the time-unit of the timeline tickmarks (minute, day, week, hour, year etc.) on both the top and bottom bands of the timeline, as well as the spacing of those tickmarks.  
 										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> 
@@ -274,14 +274,14 @@
   <span style="color: #a6e22e">data-ex-bottom-band-pixels-per-unit=</span><span style="color: #e6db74">&quot;500&quot;</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span></pre></div>
 											</code>
-									 	<p>
+										<p>
 											The timeline view is an <b>extension</b> in exhibit; it isn't automatically available.  You need to include another script in the head of your document, after the main exhibit script, to provide the new view:
 										</p>
-									  	<p>
+										<p>
 											<code>
-										  		&lt;script src=&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;&gt;&lt;/script&gt;
+												&lt;script src=&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;&gt;&lt;/script&gt;
 										</code>
-									 	<p>
+										<p>
 											The timeline view is shown to the right.  If you click on a particular item, you'll get a pop-up bubble with more detail.  The bubble contents are determined by the lens associated with this view.
 
 											If we add this timeline to our previous Exhibit, we get <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt3.html">this one</a>
@@ -290,15 +290,15 @@
 									<div class="example">
 										<div data-ex-role="view" data-ex-view-class="Timeline" data-ex-start=".time" data-ex-color-key=".username" data-ex-top-band-unit="minute" data-ex-top-band-pixels-per-unit="140" data-ex-bottom-band-pixels-per-unit="500">
 											<div data-ex-role="lens">
-										  		<span data-ex-content=".hour"></span>: <span data-ex-content=".label"></span>
+												<span data-ex-content=".hour"></span>: <span data-ex-content=".label"></span>
 											</div>
-									  	</div>
+										</div>
 									</div>
 
 									<h3>2.9: View Panels</h3>
 
 									<div class="narrative">
-									 	With three views, the presentation is getting a little long.  We can pack things together using a <b>View Panel</b>.  The View Panel gathers several views together, give each one a title, and lets the user flip between them so that only one is occupying page space at a time.  As usual, you define the view panel with an html tag:
+										With three views, the presentation is getting a little long.  We can pack things together using a <b>View Panel</b>.  The View Panel gathers several views together, give each one a title, and lets the user flip between them so that only one is occupying page space at a time.  As usual, you define the view panel with an html tag:
 										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;script </span><span style="color: #a6e22e">src=</span><span style="color: #e6db74">&quot;http://trunk.simile-widgets.org/exhibit/api/extensions/time/time-extension.js&quot;</span><span style="color: #f92672">&gt;&lt;/script&gt;</span></pre></div>											
@@ -319,8 +319,8 @@
 											</div>
 											<div data-ex-role="view" data-ex-view-class="Timeline" 	 data-ex-start=".time" data-ex-color-key=".username"  data-ex-time-line-height="350" data-ex-top-band-pixels-per-unit="150" 	 data-ex-bottom-band-pixels-per-unit="400"></div>
 											<div data-ex-role="view" data-ex-label="List" 	 data-ex-orders=".hour" 	 data-ex-possible-orders=".action,.data,.emotion,.gender,.hour,.location,.role,.username">
-										 	 </div>
-										  	<div data-ex-role="view" data-ex-label="Table" data-ex-view-class="Tabular" data-ex-columns=".username,.role,.location,.label" data-ex-column-labels="Who,Role,Where?,Tweet"></div>
+											 </div>
+											<div data-ex-role="view" data-ex-label="Table" data-ex-view-class="Tabular" data-ex-columns=".username,.role,.location,.label" data-ex-column-labels="Who,Role,Where?,Tweet"></div>
 										</div>
 									</div>
 
@@ -328,7 +328,7 @@
 
 									<div  class="narrative">
 										Exhibit includes <b>facets</b> that can filter the data being displayed.  To specify a facet you specify the expression (e.g. property) that should be used to filter, and optionally a facet type.  The default facet, the list facet, simply lists all values of the property; clicking on a value filters down to the items that have the chosen value on that property:
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;view-panel&quot;</span><span style="color: #f92672">&gt;&lt;/div&gt;</span></pre></div>
 											</code>
@@ -339,13 +339,13 @@
 										<p>
 											Besides the default list facet, there as a textsearch facet that offers a textbox where the reader can type arbitrary text that is matched against the content of the items.
 										</p>
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;facet&quot;</span> <span style="color: #a6e22e">data-ex-facet-class=</span><span style="color: #e6db74">&quot;TextSearch&quot;</span><span style="color: #f92672">&gt;&lt;/div&gt;</span></pre></div>
 											</code><br/>
 											There is also a TagCloud facet type that displays values in a tag cloud (larger ones are more common):
 										</p>
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> 
   <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;facet&quot;</span> 
@@ -355,11 +355,11 @@
 <span style="color: #f92672">&lt;/div&gt;</span></pre></div>
 											</code>
 										</p>
-									  	<p>
+										<p>
 											For number-valued properties, there is a NumericRange facet (lists of ranges of numbers) and Slider facet (slide to select upper and lower limits for the number value).  We don't have uses for those in this exhibit.
 										</p>
 										<p>
-										  	Adding a whole bunch of facets (and doing some standard CSS discussed below to control how they get laid out) gives us <a href="egypt5.html" target="result">this exhibit</a>; almost done!
+											Adding a whole bunch of facets (and doing some standard CSS discussed below to control how they get laid out) gives us <a href="egypt5.html" target="result">this exhibit</a>; almost done!
 										</p>
 
 										<div class="example">
@@ -396,7 +396,7 @@
 
 									<div class="narrative">
 										Now that we've included the location data, here's the map tag:
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> 
   <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;view&quot;</span> 
@@ -407,16 +407,16 @@
   <span style="color: #a6e22e">data-ex-top-band-pixels-per-unit=</span><span style="color: #e6db74">&quot;25px&quot;</span><span style="color: #f92672">&gt;</span>
 <span style="color: #f92672">&lt;/div&gt;</span></pre></div>
 											</code>
-									  	<p>
+										<p>
 											The most important option here specifies which latitude and longitude define the placement of items on the map.   This option contains something new: a <b>chain</b> of properties ".location.latlng".  The way to read this is as follows: for the item being displayed, look up its location.  That will give you the label of another item (one of the four locations).  Look up the latlng property of that item.  Exhibit lets you chain together arbitrary sequences of properties.  Breaking up your data this way is useful because now if you decide to update the latlng of a location you only need to do it in one place, instead of changing the value for every single item at that location.
 										</p>
-									  	<p>
+										<p>
 											There are also, as with the timeline, options to set the initial center and zoom level of them map, to specify properties that determine the color and size of icons on the map, or even to associate an image or icon with each item that will show on the map---there's no useful icon for this exhibit, but you can see an example in this exhibit of <a href="http://simile-widgets.org/exhibit/examples/presidents/presidents.html">U.S. Presidents</a>
 										</p>
-									 	<p>
+										<p>
 											Once we've included the 4 "location" objects, they by default become part of the data collection and get displayed in various lists.  We don't want that.  We use the <b>collection</b> tag to tell Exhibit which items we actually want to show in our views:
 										</p>
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;div</span> 
   <span style="color: #a6e22e">data-ex-role=</span><span style="color: #e6db74">&quot;collection&quot;</span> 
@@ -425,35 +425,35 @@
 											</code>
 										</p>
 										<p>
-										  	Now only the items of (default) type "Item" (namely the tweets) are plotted; the tweets of type "location" are not.
+											Now only the items of (default) type "Item" (namely the tweets) are plotted; the tweets of type "location" are not.
 										</p>
 									</div>
 
 									<div class="example">
-									  	<div class="exhibit">
+										<div class="exhibit">
 											<div data-ex-role="view" data-ex-view-class="Map" data-ex-latlng=".location.latlng" data-ex-zoom="16" data-ex-center="30.044939,31.23680" >
-										  		<div data-ex-role="lens">
+												<div data-ex-role="lens">
 													<a class="hoverOver" data-ex-href-content=".url"><div data-ex-content=".label"></div></a>
 													<b>Topics:</b> <span data-ex-content=".keywords"></span>
 													<br/><br/>
 												</div>
 											</div>
-									  	</div>
+										</div>
 									</div>
 
 									<h3>2.12: Wrap Up: Css</h3>
 
 									<div class="narrative">
-									  	We've now incorporated all the exhibit tags necessary for our final visualization.  It remains to nicely style the result using CSS.  This is just a plain html page, so you can style it the usual way.  Exhibit assigns specific classes to the various elements it creates, and you can assign styles to those classes in order to style the exhibit elements.  The easiest way to identify the styles is using <a href="http://www.getfirebug.com">firebug</a> or some other DOM inspection tool: render the page, then use "inspect element" to identify the class that Exhibit has assigned to the rendered element.  As an example, the (default) list facets get a class of "exhibit-facet", so we can style them to all float on the same row using the following CSS:
-									  	<br/><br/>
-									  	<code>
+										We've now incorporated all the exhibit tags necessary for our final visualization.  It remains to nicely style the result using CSS.  This is just a plain html page, so you can style it the usual way.  Exhibit assigns specific classes to the various elements it creates, and you can assign styles to those classes in order to style the exhibit elements.  The easiest way to identify the styles is using <a href="http://www.getfirebug.com">firebug</a> or some other DOM inspection tool: render the page, then use "inspect element" to identify the class that Exhibit has assigned to the rendered element.  As an example, the (default) list facets get a class of "exhibit-facet", so we can style them to all float on the same row using the following CSS:
+										<br/><br/>
+										<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;style&gt;</span>
   <span style="color: #f92672">div</span><span style="color: #a6e22e">.exhibit-facet</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">float</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">left</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #66d9ef">font-size</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">15px</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #66d9ef">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5px</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #66d9ef">position</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">relative</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #66d9ef">width</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">170px</span><span style="color: #f8f8f2">;</span>
+	<span style="color: #66d9ef">float</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">left</span><span style="color: #f8f8f2">;</span>
+	<span style="color: #66d9ef">font-size</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">15px</span><span style="color: #f8f8f2">;</span>
+	<span style="color: #66d9ef">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">5px</span><span style="color: #f8f8f2">;</span>
+	<span style="color: #66d9ef">position</span><span style="color: #f92672">:</span> <span style="color: #66d9ef">relative</span><span style="color: #f8f8f2">;</span>
+	<span style="color: #66d9ef">width</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">170px</span><span style="color: #f8f8f2">;</span>
   <span style="color: #f8f8f2">}</span>
 <span style="color: #f92672">&lt;/style&gt;</span></pre></div></code><br/>
 									<p>With this done (and more CSS) we produce our <a href="http://people.csail.mit.edu/karger/Exhibit/CAR/HandsOn/egypt.html" target="result">final exhibit</a>.</p><br/>
@@ -476,7 +476,7 @@
 									</p>
 									<p>
 										For our example, for our Egypt Exhibit, you can put the following link to the tweets spreadsheet in the head of the document instead of the previous json or tsv link:
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;link</span> 
   <span style="color: #f92672">rel=</span><span style="color: #e6db74">&quot;exhibit/data&quot;</span> <span style="color: #f92672">data-ex-converter=</span><span style="color: #e6db74">&quot;google-spreadsheets&quot;</span> 
@@ -488,7 +488,7 @@
 										<p>
 										Similarly, you can use the following link to pull the location data from its Google Spreadsheet:
 										</p>
-									  	<p>
+										<p>
 											<code>
 <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;padding: 10px; border-radius: 4px; color: #ccc;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">&lt;link</span> 
   <span style="color: #f92672">href=</span><span style="color: #e6db74">&quot;https://spreadsheets.google.com/feeds/list/0AhAtARHyRN5adGZKTWstczJvNjEyU1JEUGdsd1UwZ0E/od6/public/basic?alt=json-in-script&quot;</span>    
@@ -497,7 +497,7 @@
   <span style="color: #f92672">type=</span><span style="color: #e6db74">&quot;application/jsonp&quot;</span>
 <span style="color: #f92672">/&gt;</span></pre></div>
 											</code>
-									 	<p>
+										<p>
 											Probably the biggest stumbling block for Google Spreadsheets (or Excel) is dates.  There are hundreds of ways to represent dates.  Exhibit understands the "official standard" UTC representation of year-month-day followed by hours:minutes:seconds, for example 1997-09-26 13:23:18.  So do spreadsheets, but they try to "help" you by translating your dates into <b>their</b> standard format, e.g. 9/26/1997.  Even if you format the date properly, they'll often change it back without telling you.  And why you try to serve it as data for exhibit, they'll serve the wrong format.  The best solution we've found is to tell the spreadsheet that your dates are actually <b>text strings</b>.  This may involve judicious copying of your data, pasting it as a string, and invoking some concatenation functions.  
 										</p>
 									</div>
